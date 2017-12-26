@@ -1,0 +1,163 @@
+{
+    "exam_id": 12,
+    "exam_type": "生产-从业",
+    "question": [
+        {
+            "id":"1",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam8.",
+            "qnum": 4,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit."
+            }
+
+        },
+        {
+            "id":"2",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam7.",
+            "qnum": 5,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit.",
+                "E": "Tenetur adipisci eum nihil adipisci porro."
+            }
+
+        },
+        {
+            "id":"3",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam6.",
+            "qnum": 4,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit."
+            }
+
+        },
+        {
+            "id":"4",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam5.",
+            "qnum": 5,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit.",
+                "E": "Tenetur adipisci eum nihil adipisci porro."
+            }
+
+        },{
+            "id":"5",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam4.",
+            "qnum": 4,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit."
+            }
+
+        }
+        ,{
+            "id":"6",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam3.",
+            "qnum": 5,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit.",
+                "E": "Tenetur adipisci eum nihil adipisci porro."
+            }
+
+        },
+        {
+            "id":"7",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam2.",
+            "qnum": 5,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit.",
+                "E": "Tenetur adipisci eum nihil adipisci porro."
+            }
+
+        },
+        {
+            "id":"8",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam1.",
+            "qnum": 4,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit."
+            }
+
+        },{
+            "id":"9",
+            "type":"Single",
+            "content": "Earum beatae praesentium id rerum nemo numquam0.",
+            "qnum": 4,
+            "qans": {
+                "A": "Corporis ipsum sed impedit rerum incidunt et.",
+                "B": "Sit eum sed sapiente et.",
+                "C": "Et exercitationem voluptas vel possimus itaque.",
+                "D": "Illo in quae hic impedit."
+            }
+
+        },
+        {
+            "id":"10",
+            "type":"Multiple",
+            "content": "Eius aut fuga minus dolorum est eligendi.",
+            "qnum": 4,
+            "qans": {
+                "A": "Odit dicta quis laborum ea enim.",
+                "B": "Cum et adipisci ut mollitia dignissimos non voluptas.",
+                "C": "Et maiores enim quod accusantium et architecto dolor dolor.",
+                "D": "Rem vitae et et architecto deleniti omnis voluptatem."
+            }
+        },{
+            "id":"11",
+            "type":"Multiple",
+            "content": "Eius aut fuga minus dolorum est eligendi.",
+            "qnum": 4,
+            "qans": {
+                "A": "Odit dicta quis laborum ea enim.",
+                "B": "Cum et adipisci ut mollitia dignissimos non voluptas.",
+                "C": "Et maiores enim quod accusantium et architecto dolor dolor.",
+                "D": "Rem vitae et et architecto deleniti omnis voluptatem."
+            }
+        },{
+            "id":"12",
+            "type":"judge",
+            "content": "Sequi autem est dignissimos vero explicabo expedita aut.",
+            "qnum": 2,
+            "qans": {
+                "A": "正确",
+                "B": "错误"
+            }
+        },{
+            "id":"13",
+            "type":"essay",
+            "content": "345555444",
+            "qnum": 0,
+            "qans": null
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>exam</title>
+  <style>
+        ul,li{
+          list-style: none;
+        }
+        .wrap{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .every_qan{
+            border: 1px solid red;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div id="content">
+    
+  </div>
+</div>
+
+<script src='/js/jquery-1.7.2.min.js'></script>
+<script src='/js/template-web.js'></script>
+<script id='exam' type='text/html'>
+
+{{each question qans}}
+<!-- 题目渲染 -->
+  <div class='every_qan'>
+    <!-- 题号和题目 -->
+      <div>{{qans.id}}、{{qans.content}}</div><br>
+      <!-- 选项 -->
+      <!-- 判断题目类型 -->
+      {{if qans.type === 'Multiple'}}
+      <!-- 多选题 -->
+      <ul>{{each qans.qans qan num}}
+          <li class='{{qans.id}}'>                        
+                <input type="checkbox" name='{{qans.id}}' id='{{qans.id}}/{{num}}'>   
+                <label for="{{qans.id}}/{{num}}">
+                  {{num}}：{{qan}}                               
+                </label>
+          </li><br>
+          {{/each}}
+      </ul> 
+      {{else}}
+      <!-- 单选题 -->
+      <ul>{{each qans.qans qan num}}
+          <li class='{{qans.id}}'>                        
+                <input type="radio" name='{{qans.id}}' id='{{qans.id}}/{{num}}'>   
+                <label for="{{qans.id}}/{{num}}">
+                  {{num}}：{{qan}}                               
+                </label>
+          </li><br>
+          {{/each}}
+      </ul>    
+      {{/if}} 
+  </div>
+{{/each}}
+      </script>
+      <script>   
+            $.ajax({
+                url: '/exam',
+                type: 'get',
+                success: function(data){
+                    console.log(data);
+                    var html = template('exam',data);
+                    // console.log(html)
+                    $('#content').html(html);
+                }
+            })
+            // 设置本地存储
+             var storge = window.localStorage;
+            //  用来存储答案的对象
+             var formData = {};
+          
+             $('#content').on('change','input',function(){
+                     var type = $(this).attr('type');
+                    //  alert(type);
+              if( type === 'checkbox'){
+                // alert('我是多选题')
+                var thatId = $(this).attr('id');
+                      // 将题号和选项分成数组
+                      var queNum = thatId.split('/'); 
+                      var xuanxiang = queNum[queNum.length - 1];
+                      var arrlist = []; 
+                      if(this.checked){
+                        arrlist.push(queNum);
+                        arrlist.push(xuanxiang); 
+                      }else{
+                        arrlist.push(queNum);
+                        arrlist.push('');
+                      }                                                     
+                      set.apply(formData,arrlist);  
+              }else{
+                var thatId = $(this).attr('id');
+                      // 将题号和选项分成数组
+                      var queNum = thatId.split('/');             
+                      set.apply(formData,queNum);  
+              }
+            
+             })
+               // 用来保存和更新答案
+               function set(key,value){
+                      var that = this;
+                      that[key] = {'value': value};
+                      storge.setItem('keyes',JSON.stringify(formData));
+             }
+      </script>
+	
+</body>
+</html>
